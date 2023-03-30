@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form action="form2.php" method="post">
+        <h1>Inserción de vivienda:</h1>
+        <div class="desp_div">
+            <label for="vivienda">Tipo de vivienda:</label>
+            <select name="tipo">
+                <option value="Piso" selected>Piso
+                <option value="Adosado">Adosado
+                <option value="Chalet">Chalet
+                <option value="Casa">Casa
+            </select>
+        </div><br>
+        <div class="desp_div">
+            <label for="zona">Zona:</label>
+            <select name="zona">
+                <option value="Centro" selected>Centro
+                <option value="Periferia">Periferia
+            </select>
+        </div><br>
+        <div class="desp_div">
+            <label for="direccion">Dirección:</label>
+            <input type="text" name="direccion">
+        </div><br>
+        <div class="desp_div">
+            <label for="dorms">Numero de dormitorios:</label>
+            <label for="d1">1</label>
+            <input type="radio" id="d1" name="dorms" value=1>
+            <label for="d2">2</label>
+            <input type="radio" id="d2" name="dorms" value=2>
+            <label for="d3">3</label>
+            <input type="radio" id="d3" name="dorms" value=3>
+            <label for="d4">4</label>
+            <input type="radio" id="d4" name="dorms" value=4>
+            <label for="d5">5</label>
+            <input type="radio" id="d5" name="dorms" value=5>
+        </div><br>
+        <div class="desp_div">
+            <label for="precio">Precio:</label>
+            <input type="text" name="precio">€
+        </div><br>
+        <div class="desp_div">
+            <label for="tamaño">Tamaño:</label>
+            <input type="text" name="tamaño">
+        </div><br>
+        <div class="desp_div">
+            <label for="extras">Extras:</label>
+            <label for="piscina">Piscina</label>
+            <input type="checkbox" name="piscina">
+            <label for="jardin">Jardín</label>
+            <input type="checkbox" name="jardin">
+            <label for="garaje">Garaje</label>
+            <input type="checkbox" name="garaje">
+        </div><br>
+        <div class="desp_div">
+            <label for="observaciones">Observaciones:</label>
+            <input type="text" name="observaciones"><br>
+        </div><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body onload = "init()">
+        <div id="full_container">
+            <div id="playground">
+                <div id="name"></div>
+                <div id="bloque_container">
+                    <div id="shape"><div id="rotation_anchor"></div></div>
+                    <div id="other_anchor"></div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="rangeslider">
+            <div id="check" class="label">Anchors</div>
+            <input type="checkbox" id="myCheck" onclick="check()"><br>
+            
+            <div class="label" for="sliderRange">Rotate</div> 
+            <input type="range" min="0" max="360" value="0" class="mySlider" id="sliderRange"><div class="slideroutput" id="rotacion"></div><br>
+            <div class="label" for="sliderposx">Top</div>
+            <input type="range" min="0" max="100" value="22" class="mySlider" id="sliderposx"><div class="slideroutput" id="posx"></div><br>
+            <div class="label" for="sliderposy">Left</div>
+            <input type="range" min="0" max="100" value="38" class="mySlider" id="sliderposy"><div class="slideroutput" id="posy"></div><br>
+            <div class="label" for="slidertrx">Translate X</div>
+            <input type="range" min="-100" max="100" value="0" class="mySlider" id="slidertrx"><div class="slideroutput" id="trx"></div><br>
+            <div class="label" for="slidertry">Translate Y</div>
+            <input type="range" min="-100" max="100" value="0" class="mySlider" id="slidertry"><div class="slideroutput" id="try"></div><br>
+
+        </div>
+        <script src="javascript.js"></script>
+    </body>
+</html>
